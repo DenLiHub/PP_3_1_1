@@ -7,7 +7,7 @@
 <h1>Редактирование пользователя</h1>
 
 <form th:action="@{|/${user.id}|}" th:object="${user}" method="post">
-    <input type="hidden" name="_method" value="patch"/>
+
 
     <label>Имя:</label>
     <input type="text" th:field="*{firstName}" required/><br><br>
